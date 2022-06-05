@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+header > h1{
+    background-color: black;
+    color: white;
+    border-radius: 10x;
+    text-align: center;
+}
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 30px;  
+   
+}
+
+section.imagem{
+    background-attachment: fixed;
+    background-color: bl;
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.575);
+}
+section#img01{
+    background-image: url(imagens/Sekiro\ -\ Perfil.jpg);
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagens/Ishin\ -\ Perfil.jpg);
+    background-size: cover;
+}
+section#img03{
+    background-image: url(imagens/Genichiro\ -\ Perfil.jpg);
+    background-size: cover;
+}
+p{
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+}

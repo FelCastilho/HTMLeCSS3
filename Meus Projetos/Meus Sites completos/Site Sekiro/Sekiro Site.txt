@@ -1,0 +1,38 @@
+Cor para links : Cinza
+Cor para o Site: Cinza e Laranja (Arrumar da melhor forma possivel)
+Cor para fonte: Branco / Preta ( Decidir )
+Cor para o background das fontes: Decidir
+
+-------------------------------------------------------------------------
+
+Fonte para as letras de paragráfo: Arial (Mudar)
+Fonte para links: Decidir 
+Fonte para H2: Japonesa
+
+Teste 1 : Pode melhorar
+
+    --cor1: #97B0AD;
+    --cor2: #FF8952;
+    --cor3: #FA7336;
+    --cor4: #AD4515;
+    --cor5: #47311C;
+
+
+Teste 2: Não gostei muito
+
+--cor1: #252525;
+--cor2: #ffffff;
+--cor3: #f7f0f0;
+--cor4: #fa5f1a;
+
+teste 3: As cores ficaram sem harmonia
+
+    --cor1: #AF948F;
+    --cor2: #f1d9be;
+    --cor3: #FB6602;
+    --cor4: #555555;
+    --cor5: #999999;
+
+Comentários do autor:
+O site não possui responsividade nas imagens, somente na area de
+conteudo main

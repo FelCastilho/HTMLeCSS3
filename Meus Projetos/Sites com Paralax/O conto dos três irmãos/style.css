@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url(fontes/ShadowsIntoLight-Regular.ttf);
+
+    font-family: 'Courgette';
+    src: url(fontes/Courgette-Regular.ttf);
+    
+    font-family: 'Roboto';
+    src: url(fontes/Roboto-Regular.ttf);
+
+    font-family: 'Bebas Neue';
+    src: url(fontes/BebasNeue-Regular.ttf) ;
+}
+
+:root{
+    --cor1: black;
+    --cor2: #976833;
+    --cor3: #afa661;
+    --cor4: #a3844b ;
+
+    --fonte-links: 'Roboto', sans-serif;
+    --fonte-texto: 'Courgette', cursive;
+    --fonte-titulos: 'Bebas Neue', cursive;
+}
+
+header{
+    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.815));
+    color: white;  
+    padding: 10px;
+     
+    
+}
+header > h1{
+    text-align: center;
+    font-family: var(--fonte-titulos);
+}
+header > p {
+    text-align: center;
+   
+}
+
+nav > a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fonte-links);
+    font-size: 17px;
+      
+}
+nav > a:hover{
+    background-color: var(--cor2);
+    transition-duration: 0.5s;
+    padding: 9px;
+    border-radius: 10px;
+    
+}
+main{
+    background-color: white;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    font-family: var(--fonte-texto);
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.329);
+    background-attachment: fixed;
+    
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.445);
+    text-align: justify;
+    width: 40%;
+    padding: 40px;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    
+}
+section#img1{
+    
+    background-image: url(imagens/criando\ a\ ponte.jpg);
+    background-position: left right;
+    background-size: cover;
+    border-radius: 10px;
+}
+section#img2{
+    background-image: url(imagens/pedra\ da\ ressureição.jpg);
+    background-position: top left;
+    background-size: cover;
+    border-radius: 10px;
+}
+section#img3{
+    background-image: url(imagens/Os\ três\ irmãos.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+section#img4{
+    background-image: url(imagens/ultimo\ irmão.jpeg);
+    background-size: cover;
+    background-position: top left;
+    border-radius: 10px;
+}
+section.texto > p{
+    color: black;
+    text-align: justify;
+    width: 40%;
+    padding: 40px;
+    font-size: 25px;
+    margin-left: 50%;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #976833, #afa661, #976833);
+    background-attachment: fixed;
+    margin: 0px;
+   
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer > a{
+    text-decoration: none;
+    color: white;
+}

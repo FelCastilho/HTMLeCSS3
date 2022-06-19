@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #28104E;
+}
+.container{
+    padding: 5px;
+    width: 30em;
+    height: 50vh;
+    margin: auto;
+    background-color: white;
+
+}
+.input-box{
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}

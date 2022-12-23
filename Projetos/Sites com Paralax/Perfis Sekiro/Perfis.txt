@@ -1,5 +1,0 @@
-Site Sekiro 
-
-- Escolher fonte 
-- Escolher a palheta de cores 
-- Paralax

@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudando Iframes</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
+
     <p>Acessando o site do 
 
-    <iframe src="https://www.cursoemvideo.com" >
+    <iframe src="https://www.cursoemvideo.com" scrolling="no">
+        <!--Para caso do aparelho não ser compativel-->
+        <a href="https://www.cursoemvideo.com"></a> 
+    </iframe>
         
     </iframe>
     para aprender a programar!</p>
 
-    <p>O site do  também é muito legal</p>
 </body>
 </html>

@@ -1,0 +1,37 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.normal-btn{
+
+}
+#btn-1{
+    background-color: #0070d1;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    color: white;
+    padding: 20px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+}
+
+#btn-1:hover{
+    background-color: #195386;
+    transition-duration: 1s;
+}
+
+#btn-2{
+    background-image: ;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    color: white;
+    padding: 20px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+}

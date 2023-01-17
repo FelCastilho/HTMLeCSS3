@@ -1,209 +1,70 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');;
-@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
 
-@font-face {
-    font-family: 'Roboto Slab';
-    src: url(./fontes/RobotoSlab-VariableFont_wght.ttf)format('opentype');
-    font-weight: normal;
-
-    font-family: 'Macondo';
-    src: url(./fontes/Macondo-Regular.ttf)format('onpentype');
-
-    font-family: 'Bigshot One ';
-    src: url(fontes/BigshotOne-Regular.ttf)format('opentype');
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
- 
-}
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root{
-    --cor1: #f5f6f7;
-    --cor2: #e2c080;
-    --cor3: #26c6ee;
-    --cor4: #5184e4;
-    --cor5: #0d315a;
+    --fonte-subtitulos: 'Macondo', cursive;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --font-title:'Bebas Neue', cursive;
 
-    --fonte-padrao: Arial, Verdana, Malvetica, sans-serif;
-    --fonte-titulos: 'Roboto Slab', serif;
-    --fonte-subtitulos: 'Macondo', cursive; /* Letra estilo japonesa */
-    --fontes-links: 'Bigshot One', cursive;
+    --cor1: #28104E;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 
-header{
+/*Cabeçalho*/
+
+header > h1{
     background-color: black;
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: var(--fonte-subtitulos);
+
+} 
+nav{
+    background-color: black;
+    text-align: center;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    
+}
+
+/*Conteudo do site*/
+body{
+
+}
+article{
+    margin: auto;
+    text-align: center;
+}
+article > h1{
     text-align: center;
     font-family: var(--fonte-subtitulos);
+    margin: 2rem;
+}
+article > p{
+    font-family: var(--fonte-texto);
+    display: flex;
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    color: black;
     padding: 20px;
-    font-size: 30px;
-    /*Topo do site "Sekiro - Shadows Die Tw*/   
 }
-
-
-nav{
-    background-color: var(--cor3);
-    color: white;
-    padding: 10px;
-    /* Área de links do cabeçalho*/
-}
-.barrahorizontal{
-    background-color: #0d315a;
-    color: #f5f6f7;
-    border-radius: 10px;
-    padding: 5px;
-    font-family: var(--fontes-links);
-    text-decoration: none;
-    box-shadow: 1px 1px 2px black;
-}
-.links{
-    background-color: gray;
-    font-family: var(--fontes-links);
-    text-decoration: none;
-    padding: 1px
-    /* Área de links dentro do main*/
-}
-.compra{
-    text-decoration: none;
-    /*Links de compra*/
-}
-
-body{
-    background-color: var(--cor5);
+img{
+    max-width: 80%; 
+    min-width: 300px; 
+    
 }
 main{
-   background-color: var(--cor2);
-   margin: auto;
-   padding: 10px;
-   text-align: justify;
-   border-radius: 10px;
-   min-width: 300px;
-   max-width: 1100px;
-   box-shadow: 1px 3px 3px;
-   min-width: 300px;
-   max-width: 1000px;
-   /* Área de conteudo*/
-}
-iframe{
-    background-color: var(--cor5);
-    padding: 40px;
-    box-shadow: 1px 3px 3px;
-    margin-left: 260px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    /*Trailer sekiro */
     
-}
-h1 {
-    font-family: var(--fonte-titulos);
-    padding: 10px;
-}
-
-.imgtext{
-    margin-left: 150px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    box-shadow: 1px 3px 3px;
-    /* box sobre a imagem grande de sekiro*/
-}
-p{
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3ebebfa;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 2px black;
-}
-.persontext{
-    text-align: justify;
-    margin-top: 30px;
-    background-color: #e5e2e2d2;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 1px 1px 2px;
-    /*Paragrafo dos personagens de Sekiro*/
-}
-h2{
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: var(--fonte-subtitulos);
-    
-}
-.perfil{
-    margin-top: 50px;
-    
-}
-
-.imgperfil{
-    margin-left: 360px;
-    box-shadow: 1px 3px 3px;
-    /* Imagem dos personagens indivudualmente */
-}
-h3{
-    padding: 20px;
-    text-align: center;
-    margin-left: 150px;
-    width: 700px;
-    background-color: #26c6ee;
-    border-radius: 20px 20px 0px 0px;
-    font-family: var(--fonte-titulos);
-    box-shadow: 1px 3px 3px;
-    /*Inicio da area de compra do jogo, separado da box*/
-}
-aside{
-    background-color: #E6D7BD;
-    border-radius: 0px 0px 20px 20px;
-    padding: 10px;
-    width: 720px;
-    height: 300px;
-    margin-left: 150px;
-    box-shadow: 1px 3px 3px;
-}
-ul{
-    text-decoration: none
-}
-
-li{
-    margin-left: 20px;
-    text-decoration: none;
-    font-family: var(--fontes-links);
-}
-.linkcompra{
-    text-decoration: none;
-    /*Link de compra para os sites*/
-}
-.logos{
-    margin-left: 4px;
-    margin-top: 10px;
-    /* Logo Steam, PSN, XBOX*/
-}
-aside > p {
-    margin-top: 20px;
-    text-align: center;
-    font-family: var(--fonte-subtitulos);
-    font-size: 25px;
-    width: 550px;
-    margin-left: 70px;
-    
-}
-img#promocional{
-    margin-left: 350px;
-    margin-bottom: 350px;
-}
-
-footer{
-    margin-top: 10px;
-    background-color:  #000000 ;
-    color: white;
-    text-align: center;
-    font-family: var(--fonte-subtitulos);
-    /* Rodapé do site */
 }

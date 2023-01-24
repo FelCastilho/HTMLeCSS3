@@ -17,54 +17,106 @@
     padding: 0;
 }
 
-/*Cabeçalho*/
-
-header > h1{
+header{
     background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-family: var(--fonte-subtitulos);
-
-} 
-nav{
-    background-color: black;
-    text-align: center;
-}
-nav > a{
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    
-}
-
-/*Conteudo do site*/
-body{
-
-}
-article{
-    margin: auto;
-    text-align: center;
-}
-article > h1{
-    text-align: center;
-    font-family: var(--fonte-subtitulos);
-    margin: 2rem;
-}
-article > p{
-    font-family: var(--fonte-texto);
-    display: flex;
-    width: 80%;
-    text-align: justify;
-    margin: auto;
-    color: black;
     padding: 20px;
 }
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-subtitulos);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav{
+    background-color: black;
+    padding: 2%;
+    text-align: center;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-title);
+    padding: 1.5%;
+    font-size: 1.5em;
+    
+}
+
+nav > a:hover{
+    background-color: #28104E;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+   
+}
+
+article{
+    margin: auto;
+    padding: 3%;
+}  
+
+article > h1{
+    text-align: center;
+    font-family: var(--font-title);
+}   
+
+#h1person{
+    font-family: var(--fonte-texto);
+    background-color: #28104E;
+    padding: 2%;
+    color: white;
+    font-weight: normal;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.568), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+article > h2{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    font-family: var(--fonte-subtitulos);
+}
+
+article > h3{
+    text-align: center;
+    font-family: var(--fonte-texto);
+    margin-bottom: 5%;
+}
+
+article > p{
+    margin: auto;
+    width: 80%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: justify;
+    font-family: var(--fonte-texto);
+}
+
 img{
-    max-width: 80%; 
-    min-width: 300px; 
-    
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+
+    max-width: 80%;
+    min-width: 30%;
 }
-main{
-    
+
+div#video{
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 50%;
+    position: relative;
+
 }
+div > iframe{
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    border: #28104E;
+}
+
+

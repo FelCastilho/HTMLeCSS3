@@ -23,17 +23,13 @@ Grandes Telas: acima de 1200px
         border: 2px solid black;
     }
 
-    main::after{
-        content: 'Essa impressão foi feita para o cursoemvideo.com';
-    }
-
     main h1{
         text-shadow: none;
         color: black;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){ /*Table*/
+@media screen and (min-width: 768px) and (max-width: 992px){ /*Tablet*/
 
     body{
         background-image: url(../images/back-tablet.jpg);

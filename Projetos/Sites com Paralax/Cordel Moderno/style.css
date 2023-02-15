@@ -1,0 +1,116 @@
+@charset 'UTF-8';
+
+/*Fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    font-family: var(--font1);
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--font2);
+    font-size: 3em;
+    padding-top: 25px;
+    font-variant: small-caps; /*Deixa as letras maiusculas*/
+}
+
+header > p{
+    padding-bottom: 25px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--font3);
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 2em;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+/*Configurando as sections sem imagens*/
+section.normal{
+    background-color: white;
+}
+
+/*Configurando as sections com imagens*/
+section.image{
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+
+section.image > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+/*Criando efeito Parallax*/
+
+section#img01{
+    background-image: url(./imagens/background001.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url(./imagens/background002.jpg);
+    background-attachment: fixed;
+    background-position: right;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+@media screen and (max-width: 600px){
+    header > h1{
+        font-size: 4em;
+    }
+
+    section {
+        font-size: 1.5em
+    }
+}

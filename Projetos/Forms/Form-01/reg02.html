@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links Externos-->
+    <link rel="stylesheet" href="reg02.css">
+    <title>Register - Create account</title>
+</head>
+<body>
+
+    <main>
+
+        <section class="login">
+
+            <form action="cadastro.php" method="post">
+
+                <h1>Create new account.</h1>
+
+                <p>Already have an account? <a href="login02.html"><strong>Log in</strong></a></p>
+
+                <button>Sign up with Google</button>
+                <button>Sign up with Facebook</button>
+        
+                <p id="or">Or</p>
+        
+                <div class="camp">
+                    <label for="iemail"></label>
+                    <input type="email" name="iemail" id="iemail" required placeholder="Email Adress">
+                </div>
+                <div class="camp">
+                    <label for="ipassword"></label>
+                    <input type="password" name="ipassword" id="ipassword" required placeholder="Password">
+                </div>
+        
+                <div class="camp">
+                    <label for="iconfirmpass"></label>
+                    <input type="password" name="iconfirmpassword" id="iconfirmpassword" required placeholder="Confirm Password">
+                </div>
+                
+                <div id="checkbox">
+                    <label for="icheckbox"></label>
+                    <input type="checkbox" name="icheckbox" id="icheckbox" required> I agree to plataform's terms of service and privace policy
+                </div>
+
+                <input type="submit" value="Sign Up">
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

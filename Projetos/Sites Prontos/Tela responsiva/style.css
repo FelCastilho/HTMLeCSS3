@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Configurando links*/
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3;
+}
+
+a:hover{
+    opacity:0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex; /*Colocar itens do lado*/
+    justify-content: space-around; /*Dando espaço entre eles*/
+    align-items: center; /*Alinhando eles verticalmente*/
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #23232e;
+
+    height: 8vh;
+}
+
+.nav-list{
+    list-style: none; /*Tirando as bolinhas*/
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/*Menu hamburguer*/
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/*Adicionando as media querys*/
+
+@media screen and (max-width: 999px) {
+    
+    /*Ul list*/
+
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column; /*Colocando os itens um em baixo do outro*/
+        align-items: center; /*Alinhando vertical*/
+        justify-content: space-around; /*Dando espaço entre itens*/
+        transform: translateX(100%); /*Precisa do overflow-x para no body para esconder o que transborda da pagina */
+
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .nav-list.active{ /*active é a classe que será referenciada no JS*/
+        transform: translateX(0);
+    }
+
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2{
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}
+
+
+
+/*Opcional*/
+main{
+    background: url(img/background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+

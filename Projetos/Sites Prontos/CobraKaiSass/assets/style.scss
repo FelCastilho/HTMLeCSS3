@@ -1,0 +1,160 @@
+//Importando fontes / variaveis
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "../assets/var.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+//Mobile First
+
+header{
+    background-color: $cor-preta;
+    padding: 15px;
+    border-bottom: $cor-vermelha 3px solid;
+
+    menu{
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            
+            li{
+  
+                margin-left: 5px;
+                text-align: center;
+
+                a{
+                    text-decoration: none;
+                    
+                    color: $cor-vermelha;
+                }
+            }
+        }
+    }
+
+    
+}
+
+#registro{
+    display: none;
+}
+
+body{
+    background-color: $cor-preta;
+
+    img{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+
+        margin-top: 150px;
+    }
+
+}
+
+//Tablets
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+//Telas grandes
+
+@media screen and (min-width: 1024px) {
+
+    header{
+        menu{
+            ul{
+                li{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+
+        div{
+            display: block;
+            margin: auto;
+        }
+
+        section{
+            min-height: 100vh;
+        }
+
+        #registro{
+            min-height: 80vh;
+            display: block;
+        }
+
+        #logo{
+            min-height: 100vh;
+        }
+
+        img{
+            width: 80%;
+        
+            display: inline-block;
+            margin: auto;
+            margin-top: 45px;
+        
+        }
+
+        form{
+            color: white;
+            width: 500px;
+            height: 350px;
+            background-color: $cor-vermelha;
+            display: block;
+            margin: auto;
+            
+        }
+    
+        form > h1{
+            text-align: center;
+            padding: 15px;
+        }
+    
+        form > p{
+            margin-left: 15px;
+            margin-bottom: 15px;
+        }
+    
+        form > div > label{
+            margin-bottom: 15px;
+        }
+    
+        .camp{
+            padding: 15px;
+            display: block;
+        }
+        
+        input{
+            padding-bottom: 5px;
+        }
+    
+        form > input[type=submit]{
+            padding: 7px;
+            margin-left: 15px;
+            margin-bottom: 15px;
+        }
+        
+        button{
+            display: block;
+            margin: auto;
+            padding: 7px;
+            margin-top: 40px;
+        }
+    }
+
+}
